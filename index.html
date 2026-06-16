@@ -111,7 +111,7 @@
 
 <!-- ===== AgriTech EVALUATION ===== -->
 <div class="section-divider ">
-    <h2>🌾 Team AgriTech (5 members) — SP 50, SP 51, SP 52, SP 53, SP 54</h2>
+    <h2>🌾 Team AgriTech (5 members) — SP 50, SP 51, SP 52, SP 53, SP 54, SP 55</h2>
 </div>
 
 <div class="summary-grid" id="agritech-summary"></div>
@@ -153,6 +153,12 @@
         <canvas id="agritech-radar-4"></canvas>
     </div>
     
+    <div class="chart-card radar-container">
+        <h3>🎯 Radar Chart — SP 55</h3>
+        <p class="desc">ยิ่งกว้าง = เก่งรอบด้าน | จุดที่หุบเข้า = ต้องพัฒนา</p>
+        <canvas id="agritech-radar-5"></canvas>
+    </div>
+    
     <div class="chart-card">
         <h3>📊 คะแนนรายหมวด (เฉลี่ยทั้งทีม) แยกตาม Sprint</h3>
         <p class="desc">⚠️ แต่ละแท่งคือค่าเฉลี่ยรวมทั้งทีม ไม่ใช่รายบุคคล</p>
@@ -176,11 +182,11 @@
 
 <div class="kpi-grid">
     <div class="kpi-card">
-        <div class="value">30.9%</div>
+        <div class="value">33.0%</div>
         <div class="label">Team Avg. Time Saved</div>
     </div>
     <div class="kpi-card">
-        <div class="value">5.5 hrs</div>
+        <div class="value">5.9 hrs</div>
         <div class="label">Team Avg. Hours Saved / Sprint</div>
     </div>
 </div>
@@ -211,7 +217,7 @@
 
 <!-- ===== Traceability EVALUATION ===== -->
 <div class="section-divider trace">
-    <h2>🔗 Team Traceability (2 members) — SP 84, SP 85, SP 86, SP 87</h2>
+    <h2>🔗 Team Traceability (2 members) — SP 84, SP 85, SP 86, SP 87, SP 88</h2>
 </div>
 
 <div class="summary-grid" id="traceability-summary"></div>
@@ -247,6 +253,12 @@
         <canvas id="traceability-radar-3"></canvas>
     </div>
     
+    <div class="chart-card radar-container">
+        <h3>🎯 Radar Chart — SP 88</h3>
+        <p class="desc">ยิ่งกว้าง = เก่งรอบด้าน | จุดที่หุบเข้า = ต้องพัฒนา</p>
+        <canvas id="traceability-radar-4"></canvas>
+    </div>
+    
     <div class="chart-card">
         <h3>📊 คะแนนรายหมวด (เฉลี่ยทั้งทีม) แยกตาม Sprint</h3>
         <p class="desc">⚠️ แต่ละแท่งคือค่าเฉลี่ยรวมทั้งทีม ไม่ใช่รายบุคคล</p>
@@ -270,11 +282,11 @@
 
 <div class="kpi-grid">
     <div class="kpi-card">
-        <div class="value">30.3%</div>
+        <div class="value">29.2%</div>
         <div class="label">Team Avg. Time Saved</div>
     </div>
     <div class="kpi-card">
-        <div class="value">5.4 hrs</div>
+        <div class="value">5.2 hrs</div>
         <div class="label">Team Avg. Hours Saved / Sprint</div>
     </div>
 </div>
@@ -331,10 +343,10 @@ function scoreClass(s){return s>=4?'score-high':s>=3?'score-mid':'score-low'}
 
 
 (function(){
-const evalData = {"JJ": {"SP 50": {"sc": 3.5, "tr": 3, "cu": 3.5, "ii": 3, "ks": 3}, "SP 51": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 3}, "SP 52": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 3}, "SP 53": {"sc": 4, "tr": 3.5, "cu": 4, "ii": 3.5, "ks": 3}, "SP 54": {"sc": 3, "tr": 3, "cu": 4, "ii": 2, "ks": 3}}, "TINTIN": {"SP 50": {"sc": 3, "tr": 4, "cu": 3, "ii": 4, "ks": 4}, "SP 51": {"sc": 3, "tr": 4, "cu": 3, "ii": 4, "ks": 4}, "SP 52": {"sc": 3, "tr": 4, "cu": 3, "ii": 4, "ks": 4}, "SP 53": {"sc": 2, "tr": 3, "cu": 1, "ii": 1, "ks": 2}, "SP 54": {"sc": 3, "tr": 4, "cu": 2, "ii": 2, "ks": 2}}, "BOAT": {"SP 50": {"sc": 4, "tr": 4, "cu": 5, "ii": 2, "ks": 2}, "SP 51": {"sc": 4, "tr": 3, "cu": 5, "ii": 3, "ks": 3}, "SP 52": {"sc": 5, "tr": 5, "cu": 5, "ii": 5, "ks": 1}, "SP 53": {"sc": 4, "tr": 5, "cu": 3, "ii": 4, "ks": 1}, "SP 54": null}, "EVE": {"SP 50": {"sc": 4, "tr": 5, "cu": 4, "ii": 5, "ks": 2}, "SP 51": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}, "SP 52": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}, "SP 53": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}, "SP 54": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}}, "AOM": {"SP 50": {"sc": 2, "tr": 2, "cu": 4, "ii": 4, "ks": 1}, "SP 51": {"sc": 2, "tr": 2, "cu": 4, "ii": 4, "ks": 1}, "SP 52": {"sc": 3, "tr": 2, "cu": 4, "ii": 4, "ks": 1}, "SP 53": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 1}, "SP 54": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 1}}};
-const timeSaved = {"JJ": {"SP 50": 17.5, "SP 51": 17.5, "SP 52": 17.5, "SP 53": 32.5, "SP 54": 17.5}, "TINTIN": {"SP 50": 32.5, "SP 51": 32.5, "SP 52": 32.5, "SP 53": 17.5, "SP 54": 32.5}, "BOAT": {"SP 50": 32.5, "SP 51": 17.5, "SP 52": 45, "SP 53": 45, "SP 54": null}, "EVE": {"SP 50": 66.7, "SP 51": 45, "SP 52": 45, "SP 53": 45, "SP 54": 45}, "AOM": {"SP 50": 5, "SP 51": 5, "SP 52": 5, "SP 53": 45, "SP 54": 45}};
-const hoursSaved = {"JJ": {"SP 50": 3.1, "SP 51": 3.1, "SP 52": 3.1, "SP 53": 5.8, "SP 54": 3.1}, "TINTIN": {"SP 50": 5.8, "SP 51": 5.8, "SP 52": 5.8, "SP 53": 3.1, "SP 54": 5.8}, "BOAT": {"SP 50": 5.8, "SP 51": 3.1, "SP 52": 8.1, "SP 53": 8.1, "SP 54": null}, "EVE": {"SP 50": 12.0, "SP 51": 8.1, "SP 52": 8.1, "SP 53": 8.1, "SP 54": 8.1}, "AOM": {"SP 50": 0.9, "SP 51": 0.9, "SP 52": 0.9, "SP 53": 8.1, "SP 54": 8.1}};
-const sprints = ["SP 50", "SP 51", "SP 52", "SP 53", "SP 54"];
+const evalData = {"JJ": {"SP 50": {"sc": 3.5, "tr": 3, "cu": 3.5, "ii": 3, "ks": 3}, "SP 51": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 3}, "SP 52": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 3}, "SP 53": {"sc": 4, "tr": 3.5, "cu": 4, "ii": 3.5, "ks": 3}, "SP 54": {"sc": 4.5, "tr": 4, "cu": 4.5, "ii": 4, "ks": 3.5}, "SP 55": {"sc": 4.5, "tr": 4.5, "cu": 4.5, "ii": 4.5, "ks": 4}}, "TINTIN": {"SP 50": {"sc": 3, "tr": 4, "cu": 3, "ii": 4, "ks": 4}, "SP 51": {"sc": 3, "tr": 4, "cu": 3, "ii": 4, "ks": 4}, "SP 52": {"sc": 3, "tr": 4, "cu": 3, "ii": 4, "ks": 4}, "SP 53": {"sc": 2, "tr": 3, "cu": 1, "ii": 1, "ks": 2}, "SP 54": {"sc": 3, "tr": 4, "cu": 2, "ii": 2, "ks": 2}, "SP 55": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 3}}, "BOAT": {"SP 50": {"sc": 4, "tr": 4, "cu": 5, "ii": 2, "ks": 2}, "SP 51": {"sc": 4, "tr": 3, "cu": 5, "ii": 3, "ks": 3}, "SP 52": {"sc": 5, "tr": 5, "cu": 5, "ii": 5, "ks": 1}, "SP 53": {"sc": 4, "tr": 5, "cu": 3, "ii": 4, "ks": 1}, "SP 54": {"sc": 5, "tr": 4, "cu": 3, "ii": 5, "ks": 1}, "SP 55": {"sc": 5, "tr": 5, "cu": 4, "ii": 5, "ks": 1}}, "EVE": {"SP 50": {"sc": 4, "tr": 5, "cu": 4, "ii": 5, "ks": 2}, "SP 51": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}, "SP 52": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}, "SP 53": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}, "SP 54": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 3}, "SP 55": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 4}}, "AOM": {"SP 50": {"sc": 2, "tr": 2, "cu": 4, "ii": 4, "ks": 1}, "SP 51": {"sc": 2, "tr": 2, "cu": 4, "ii": 4, "ks": 1}, "SP 52": {"sc": 3, "tr": 2, "cu": 4, "ii": 4, "ks": 1}, "SP 53": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 1}, "SP 54": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 1}, "SP 55": {"sc": 5, "tr": 5, "cu": 5, "ii": 4, "ks": 1}}};
+const timeSaved = {"JJ": {"SP 50": 17.5, "SP 51": 17.5, "SP 52": 17.5, "SP 53": 32.5, "SP 54": 32.5, "SP 55": 32.5}, "TINTIN": {"SP 50": 32.5, "SP 51": 32.5, "SP 52": 32.5, "SP 53": 17.5, "SP 54": 32.5, "SP 55": 32.5}, "BOAT": {"SP 50": 32.5, "SP 51": 17.5, "SP 52": 45, "SP 53": 45, "SP 54": 32.5, "SP 55": 45}, "EVE": {"SP 50": 66.7, "SP 51": 45, "SP 52": 45, "SP 53": 45, "SP 54": 45, "SP 55": 45}, "AOM": {"SP 50": 5, "SP 51": 5, "SP 52": 5, "SP 53": 45, "SP 54": 45, "SP 55": 45}};
+const hoursSaved = {"JJ": {"SP 50": 3.1, "SP 51": 3.1, "SP 52": 3.1, "SP 53": 5.8, "SP 54": 5.8, "SP 55": 5.8}, "TINTIN": {"SP 50": 5.8, "SP 51": 5.8, "SP 52": 5.8, "SP 53": 3.1, "SP 54": 5.8, "SP 55": 5.8}, "BOAT": {"SP 50": 5.8, "SP 51": 3.1, "SP 52": 8.1, "SP 53": 8.1, "SP 54": 5.8, "SP 55": 8.1}, "EVE": {"SP 50": 12.0, "SP 51": 8.1, "SP 52": 8.1, "SP 53": 8.1, "SP 54": 8.1, "SP 55": 8.1}, "AOM": {"SP 50": 0.9, "SP 51": 0.9, "SP 52": 0.9, "SP 53": 8.1, "SP 54": 8.1, "SP 55": 8.1}};
+const sprints = ["SP 50", "SP 51", "SP 52", "SP 53", "SP 54", "SP 55"];
 const members = ["JJ", "TINTIN", "BOAT", "EVE", "AOM"];
 const prefix = 'agritech';
 
@@ -507,10 +519,10 @@ new Chart(document.getElementById(prefix+'-time-saved'),{
 })();
 
 (function(){
-const evalData = {"FUENG": {"SP 84": {"sc": 3, "tr": 4, "cu": 3, "ii": 3, "ks": 1}, "SP 85": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}, "SP 86": {"sc": 4, "tr": 5, "cu": 3, "ii": 3, "ks": 2}, "SP 87": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}}, "FON": {"SP 84": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 1}, "SP 85": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 2}, "SP 86": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}, "SP 87": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}}};
-const timeSaved = {"FUENG": {"SP 84": 32.5, "SP 85": 32.5, "SP 86": 45, "SP 87": 32.5}, "FON": {"SP 84": 17.5, "SP 85": 17.5, "SP 86": 32.5, "SP 87": 32.5}};
-const hoursSaved = {"FUENG": {"SP 84": 5.8, "SP 85": 5.8, "SP 86": 8.1, "SP 87": 5.8}, "FON": {"SP 84": 3.1, "SP 85": 3.1, "SP 86": 5.8, "SP 87": 5.8}};
-const sprints = ["SP 84", "SP 85", "SP 86", "SP 87"];
+const evalData = {"FUENG": {"SP 84": {"sc": 3, "tr": 4, "cu": 3, "ii": 3, "ks": 1}, "SP 85": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}, "SP 86": {"sc": 4, "tr": 5, "cu": 3, "ii": 3, "ks": 2}, "SP 87": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}, "SP 88": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 2}}, "FON": {"SP 84": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 1}, "SP 85": {"sc": 3, "tr": 3, "cu": 3, "ii": 3, "ks": 2}, "SP 86": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}, "SP 87": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}, "SP 88": {"sc": 4, "tr": 4, "cu": 3, "ii": 3, "ks": 2}}};
+const timeSaved = {"FUENG": {"SP 84": 32.5, "SP 85": 32.5, "SP 86": 45, "SP 87": 32.5, "SP 88": 17.5}, "FON": {"SP 84": 17.5, "SP 85": 17.5, "SP 86": 32.5, "SP 87": 32.5, "SP 88": 32.5}};
+const hoursSaved = {"FUENG": {"SP 84": 5.8, "SP 85": 5.8, "SP 86": 8.1, "SP 87": 5.8, "SP 88": 3.1}, "FON": {"SP 84": 3.1, "SP 85": 3.1, "SP 86": 5.8, "SP 87": 5.8, "SP 88": 5.8}};
+const sprints = ["SP 84", "SP 85", "SP 86", "SP 87", "SP 88"];
 const members = ["FUENG", "FON"];
 const prefix = 'traceability';
 
