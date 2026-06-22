@@ -351,56 +351,7 @@
 </div>
 
 <div class="chart-card full-width" style="margin-bottom:20px">
-    <h3>1️⃣ Evaluation Score — QA ประเมินตนเอง 5 หมวด (คะแนน 1–5)</h3>
-    <div style="overflow-x:auto;margin-top:12px">
-    <table style="width:100%;border-collapse:collapse;font-size:0.85em">
-        <tr style="border-bottom:2px solid #3d5a6a">
-            <th style="text-align:left;padding:10px;color:#00d4aa">หมวด</th>
-            <th style="text-align:center;padding:10px;color:#8ab4c8">น้ำหนัก</th>
-            <th style="text-align:left;padding:10px;color:#8ab4c8">ความหมาย</th>
-        </tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0"><b>SC</b> — Scenario Coverage</td><td style="text-align:center;color:#ffd93d">30%</td><td style="padding:10px;color:#8ab4c8">Test Case ที่ Amazon Q สร้างครอบคลุมทุกสถานการณ์หรือไม่</td></tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0"><b>TR</b> — Time Reduction</td><td style="text-align:center;color:#ffd93d">30%</td><td style="padding:10px;color:#8ab4c8">ใช้ Amazon Q ช่วยลดเวลาสร้าง Test Case ได้กี่ % ← <b style="color:#00d4aa">ใช้คำนวณ Hours Saved</b></td></tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0"><b>CU</b> — Context Understanding</td><td style="text-align:center;color:#ffd93d">15%</td><td style="padding:10px;color:#8ab4c8">ใส่ข้อมูลบริบทระบบลงใน Prompt ได้ถูกต้องครบถ้วน</td></tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0"><b>II</b> — Iteration Improvement</td><td style="text-align:center;color:#ffd93d">15%</td><td style="padding:10px;color:#8ab4c8">ปรับปรุง Prompt แล้วผลลัพธ์ดีขึ้นจากครั้งก่อน</td></tr>
-        <tr><td style="padding:10px;color:#e0e0e0"><b>KS</b> — Knowledge Sharing</td><td style="text-align:center;color:#ffd93d">10%</td><td style="padding:10px;color:#8ab4c8">แบ่งปันเทคนิค / Prompt Template ให้ทีม</td></tr>
-    </table>
-    </div>
-</div>
-
-<div class="chart-card full-width" style="margin-bottom:20px">
-    <h3>2️⃣ สูตรแปลง Score → % Time Saved → Hours Saved</h3>
-    <div style="margin-top:12px">
-    <div style="overflow-x:auto">
-    <table style="width:100%;border-collapse:collapse;font-size:0.85em">
-        <tr style="border-bottom:2px solid #3d5a6a">
-            <th style="text-align:center;padding:10px;color:#00d4aa">คะแนน TR</th>
-            <th style="text-align:left;padding:10px;color:#8ab4c8">ความหมาย</th>
-            <th style="text-align:center;padding:10px;color:#8ab4c8">% Time Saved</th>
-            <th style="text-align:left;padding:10px;color:#8ab4c8">ที่มา</th>
-        </tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="text-align:center;padding:10px;color:#ff6b6b;font-weight:bold">1</td><td style="padding:10px;color:#e0e0e0">ใช้ Amazon Q แล้วช้ากว่าเดิม</td><td style="text-align:center;color:#ff6b6b">-20%</td><td style="padding:10px;color:#6a8a9a">เพิ่มเวลา ≥20%</td></tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="text-align:center;padding:10px;color:#ffd93d;font-weight:bold">2</td><td style="padding:10px;color:#e0e0e0">ลดเวลาได้เล็กน้อย</td><td style="text-align:center;color:#ffd93d">5%</td><td style="padding:10px;color:#6a8a9a">midpoint ของ 0–10%</td></tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="text-align:center;padding:10px;color:#ffd93d;font-weight:bold">3</td><td style="padding:10px;color:#e0e0e0">ลดเวลาได้ปานกลาง</td><td style="text-align:center;color:#ffd93d">17.5%</td><td style="padding:10px;color:#6a8a9a">midpoint ของ 10–25%</td></tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="text-align:center;padding:10px;color:#00d4aa;font-weight:bold">4</td><td style="padding:10px;color:#e0e0e0">ลดเวลาได้ดี</td><td style="text-align:center;color:#00d4aa">32.5%</td><td style="padding:10px;color:#6a8a9a">midpoint ของ 25–40%</td></tr>
-        <tr><td style="text-align:center;padding:10px;color:#00d4aa;font-weight:bold">5</td><td style="padding:10px;color:#e0e0e0">ลดเวลาได้มาก</td><td style="text-align:center;color:#00d4aa">45%</td><td style="padding:10px;color:#6a8a9a">conservative ของ ≥40%</td></tr>
-    </table>
-    </div>
-    <div style="margin-top:16px;padding:14px;background:#12202a;border-radius:8px;border-left:3px solid #00d4aa">
-        <p style="color:#e0e0e0;font-size:0.88em;line-height:1.8">
-            <b style="color:#00d4aa">สูตรหลัก:</b><br>
-            <code style="background:#0f1923;padding:4px 8px;border-radius:4px;color:#ffd93d">Hours Saved = ΣEffort × (%TimeSaved ÷ 100)</code><br><br>
-            <b style="color:#8ab4c8">โดย:</b><br>
-            • <b>ΣEffort</b> = ชั่วโมงรวมของ Task Done ที่ assign ให้คนนั้นใน Sprint (ดึงจาก Azure DevOps Board อัตโนมัติ)<br>
-            • <b>%TimeSaved</b> = แปลงจากคะแนน Time Reduction ตามตารางด้านบน<br>
-            • กรณี ΣEffort ไม่มีข้อมูล → ใช้ Baseline 18 hrs/Sprint เป็น fallback
-        </p>
-    </div>
-    </div>
-</div>
-
-<div class="chart-card full-width" style="margin-bottom:20px">
-    <h3>3️⃣ ที่มาข้อมูล — แหล่งข้อมูลและความน่าเชื่อถือ</h3>
+    <h3>📌 ที่มาของข้อมูล</h3>
     <div style="overflow-x:auto;margin-top:12px">
     <table style="width:100%;border-collapse:collapse;font-size:0.85em">
         <tr style="border-bottom:2px solid #3d5a6a">
@@ -408,22 +359,77 @@
             <th style="text-align:left;padding:10px;color:#8ab4c8">แหล่งที่มา</th>
             <th style="text-align:left;padding:10px;color:#8ab4c8">ลักษณะ</th>
         </tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0">คะแนน 5 หมวด</td><td style="padding:10px;color:#8ab4c8">QA กรอกใน Excel ทุกสิ้น Sprint</td><td style="padding:10px;color:#ffd93d">Self-assessment</td></tr>
-        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0">ΣEffort (ชม.)</td><td style="padding:10px;color:#8ab4c8">ดึงจาก Azure DevOps Task → field "Effort"</td><td style="padding:10px;color:#00d4aa">ข้อมูลจริงจาก Board</td></tr>
+        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0">คะแนน 5 หมวด (1–5)</td><td style="padding:10px;color:#8ab4c8">QA กรอกใน Excel ทุกสิ้น Sprint</td><td style="padding:10px;color:#ffd93d">Self-assessment ตาม rubric</td></tr>
+        <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0">ΣEffort (ชม.)</td><td style="padding:10px;color:#8ab4c8">Azure DevOps Task → field "Effort"</td><td style="padding:10px;color:#00d4aa">ข้อมูลจริงจาก Board</td></tr>
         <tr style="border-bottom:1px solid #2d4a5a"><td style="padding:10px;color:#e0e0e0">Tasks Done</td><td style="padding:10px;color:#8ab4c8">นับ Task state=Done จาก Azure DevOps</td><td style="padding:10px;color:#00d4aa">ข้อมูลจริงจาก Board</td></tr>
-        <tr><td style="padding:10px;color:#e0e0e0">Hours Saved</td><td style="padding:10px;color:#8ab4c8">คำนวณจาก ΣEffort × %TimeSaved</td><td style="padding:10px;color:#ffd93d">ผสม (Effort จริง × Score ประเมิน)</td></tr>
     </table>
     </div>
 </div>
 
 <div class="chart-card full-width" style="margin-bottom:20px">
-    <h3>4️⃣ ตัวอย่างการคำนวณจริง — FON (Traceability SP 89)</h3>
+    <h3>1️⃣ 📈 คะแนนเฉลี่ยรายบุคคล แยกตาม Sprint</h3>
     <div style="margin-top:12px;padding:16px;background:#12202a;border-radius:8px;font-size:0.88em;line-height:2.2;color:#e0e0e0">
-        <b style="color:#8ab4c8">ข้อมูลจาก Board:</b> FON ทำ 6 Tasks Done ใน SP 89 → ΣEffort = <b style="color:#00d4aa">40 ชม.</b><br>
-        <b style="color:#8ab4c8">คะแนนจาก Excel:</b> Time Reduction Score = <b style="color:#ffd93d">4</b><br>
-        <b style="color:#8ab4c8">แปลง:</b> Score 4 → %TimeSaved = <b style="color:#00d4aa">32.5%</b><br>
-        <b style="color:#8ab4c8">คำนวณ:</b> Hours Saved = 40 × (32.5 ÷ 100) = <b style="color:#00d4aa">13.0 ชม.</b><br><br>
-        <span style="color:#6a8a9a">→ หมายความว่า: จากงาน 40 ชม. ที่ FON ได้รับมอบหมาย เธอประหยัดเวลาได้ 13 ชม. จากการใช้ Amazon Q ช่วย</span>
+        <b style="color:#00d4aa">สูตร:</b> คะแนนเฉลี่ย = (SC + TR + CU + II + KS) ÷ 5<br><br>
+        <b style="color:#8ab4c8">ตัวอย่าง:</b> FON ใน SP 89 ได้ SC=4, TR=4, CU=3, II=3, KS=2<br>
+        <code style="background:#0f1923;padding:4px 8px;border-radius:4px;color:#ffd93d">(4 + 4 + 3 + 3 + 2) ÷ 5 = 16 ÷ 5 = 3.20</code><br><br>
+        <b style="color:#8ab4c8">ที่มาของข้อมูล:</b> QA ประเมินตนเองใน Excel ทุกสิ้น Sprint โดยให้คะแนน 1–5 ใน 5 หมวด<br>
+        <b style="color:#8ab4c8">การอ่านกราฟ:</b> แท่งยิ่งสูง = คะแนนเฉลี่ยยิ่งดี (เต็ม 5.0)
+    </div>
+</div>
+
+<div class="chart-card full-width" style="margin-bottom:20px">
+    <h3>2️⃣ 📊 คะแนนรายหมวด (เฉลี่ยทั้งทีม) แยกตาม Sprint</h3>
+    <div style="margin-top:12px;padding:16px;background:#12202a;border-radius:8px;font-size:0.88em;line-height:2.2;color:#e0e0e0">
+        <b style="color:#00d4aa">สูตร:</b> คะแนนหมวด X ของทีม = Σ(คะแนน X ของทุกคน) ÷ จำนวนสมาชิก<br><br>
+        <b style="color:#8ab4c8">ตัวอย่าง:</b> หมวด SC ใน SP 89 — ทีม Traceability (2 คน)<br>
+        • FUENG SC = 2, FON SC = 4<br>
+        <code style="background:#0f1923;padding:4px 8px;border-radius:4px;color:#ffd93d">SC เฉลี่ยทีม = (2 + 4) ÷ 2 = 3.00</code><br><br>
+        <b style="color:#8ab4c8">การอ่านกราฟ:</b> เปรียบเทียบแท่งข้ามหมวด → หมวดที่ต่ำคือจุดที่ทีมต้องพัฒนา
+    </div>
+</div>
+
+<div class="chart-card full-width" style="margin-bottom:20px">
+    <h3>3️⃣ 📉 แนวโน้มพัฒนาการรายบุคคล</h3>
+    <div style="margin-top:12px;padding:16px;background:#12202a;border-radius:8px;font-size:0.88em;line-height:2.2;color:#e0e0e0">
+        <b style="color:#00d4aa">สูตร:</b> ใช้คะแนนเฉลี่ยเดียวกับข้อ 1 นำมา plot เป็นเส้นเชื่อมข้าม Sprint<br><br>
+        <b style="color:#8ab4c8">ตัวอย่าง:</b> FON<br>
+        • SP 84 = 3.00 → SP 86 = 3.80 → SP 89 = 3.20<br><br>
+        <b style="color:#8ab4c8">การอ่านกราฟ:</b><br>
+        • เส้นขึ้น = พัฒนาดีขึ้น<br>
+        • เส้นราบ = คงที่<br>
+        • เส้นลง = ต้องทบทวน
+    </div>
+</div>
+
+<div class="chart-card full-width" style="margin-bottom:20px">
+    <h3>4️⃣ 📉 Burndown Chart — ชั่วโมงจริงที่ใช้สร้าง Test Case</h3>
+    <div style="margin-top:12px;padding:16px;background:#12202a;border-radius:8px;font-size:0.88em;line-height:2.2;color:#e0e0e0">
+        <b style="color:#00d4aa">สูตร:</b> Actual Hours = ΣEffort × (1 − %TimeSaved ÷ 100)<br><br>
+        <b style="color:#8ab4c8">ตัวอย่าง:</b> FON SP 89<br>
+        • ΣEffort = 40 ชม. (ดึงจาก Board)<br>
+        • คะแนน TR = 4 → %TimeSaved = 32.5%<br>
+        <code style="background:#0f1923;padding:4px 8px;border-radius:4px;color:#ffd93d">Actual Hours = 40 × (1 − 32.5 ÷ 100) = 40 × 0.675 = 27 ชม.</code><br><br>
+        <b style="color:#8ab4c8">ความหมาย:</b> งาน 40 ชม. ถ้าทำ Manual ต้องใช้ 40 ชม. พอมี Amazon Q ช่วย ใช้จริงแค่ 27 ชม. → ประหยัด 13 ชม.<br><br>
+        <b style="color:#8ab4c8">การอ่านกราฟ:</b><br>
+        • <span style="color:#ff6b6b">เส้นประแดง</span> = ΣEffort เต็ม (ถ้าทำ Manual ไม่มี AI ช่วย)<br>
+        • <span style="color:#00d4aa">เส้นสี</span> = ชั่วโมงจริงที่ใช้ (ยิ่งต่ำ = ยิ่งประหยัด)<br>
+        • <span style="color:#ffd93d">ช่องว่าง</span> ระหว่างเส้นแดงกับเส้นสี = ชั่วโมงที่ประหยัดได้
+    </div>
+</div>
+
+<div class="chart-card full-width" style="margin-bottom:20px">
+    <h3>5️⃣ 📊 % Time Reduction รายบุคคล แยกตาม Sprint</h3>
+    <div style="margin-top:12px;padding:16px;background:#12202a;border-radius:8px;font-size:0.88em;line-height:2.2;color:#e0e0e0">
+        <b style="color:#00d4aa">สูตร:</b> Hours Saved = ΣEffort × (%TimeSaved ÷ 100)<br><br>
+        <b style="color:#8ab4c8">การแปลงคะแนน → %:</b><br>
+        • คะแนน 1 = -20% | 2 = 5% | 3 = 17.5% | 4 = 32.5% | 5 = 45%<br>
+        • ใช้ค่า midpoint ของแต่ละช่วง เพื่อไม่ประเมินสูงหรือต่ำเกินไป<br><br>
+        <b style="color:#8ab4c8">ตัวอย่าง:</b> FON SP 89<br>
+        • ΣEffort = 40 ชม. (จาก Board)<br>
+        • คะแนน TR = 4 → %TimeSaved = 32.5%<br>
+        <code style="background:#0f1923;padding:4px 8px;border-radius:4px;color:#ffd93d">Hours Saved = 40 × (32.5 ÷ 100) = 40 × 0.325 = 13 ชม.</code><br><br>
+        <b style="color:#8ab4c8">ความหมาย:</b> จากงาน 40 ชม. ที่ FON ได้รับมอบหมาย Amazon Q ช่วยประหยัดเวลาได้ 13 ชม. ใน Sprint นั้น<br><br>
+        <b style="color:#8ab4c8">การอ่านกราฟ:</b> แท่งยิ่งสูง = ลดเวลาได้มากขึ้น
     </div>
 </div>
 
